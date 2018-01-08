@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:NoHouse.xcodeproj">
+      location = "group:/Volumes/Storage/Development/Xcode/Projects/no-house/NoHouse/NoHouse/No House Logo.png">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
