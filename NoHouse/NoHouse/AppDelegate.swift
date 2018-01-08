@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  NoHouse
 //
-//  Created by Josh Cobert on 1/7/18.
+//  Created by Joe and Co. on 1/7/18.
 //  Copyright © 2018 Jo and Co. All rights reserved.
 //
 
