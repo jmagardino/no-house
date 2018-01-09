@@ -9,16 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-//    var username = ""
-//    var password = ""
     
     let userJosh = "josh"
     let passJosh = "admin"
     let userJoe = "joe"
     let passJoe = "admin"
     
-    // OUTLETS
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtPassword: UITextField!    
     @IBOutlet weak var lblTestMessage: UILabel!
@@ -26,23 +22,27 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Adds ability to dismiss keyboard
+        let kbdToolbar = UIToolbar()
+        
+        let kbdDoneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.kbdDone_Click))
+        
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        
+        kbdToolbar.setItems([flexSpace, kbdDoneButton], animated: true)
+        kbdToolbar.sizeToFit()
+        
+        txtUsername.inputAccessoryView = kbdToolbar
+        txtPassword.inputAccessoryView = kbdToolbar
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func kbdDone_Click() {
+        view.endEditing(true)
     }
+
     
-    // USERNAME ENTERED INTO TEXT BOX
-    @IBAction func txtUsername_Enter(_ sender: Any) {
-    }
-    
-    // PASSWORD ENTERED INTO TEXT BOX
-    @IBAction func txtPassword_Enter(_ sender: Any) {
-    }
-    
-    // SUBMIT BUTTON PRESS
+    // Login button action
     @IBAction func btnLogin_Click(_ sender: Any) {
         
         if let username = txtUsername.text, let password = txtPassword.text {
