@@ -56,13 +56,13 @@
 		03A46F2E2002B4CC00AAA37E /* NoHouse */ = {
 			isa = PBXGroup;
 			children = (
+				03A46F3B2002B4CC00AAA37E /* Info.plist */,
 				03A46F2F2002B4CC00AAA37E /* AppDelegate.swift */,
+				03A46F382002B4CC00AAA37E /* LaunchScreen.storyboard */,
 				03A46F332002B4CC00AAA37E /* Main.storyboard */,
 				03A46F312002B4CC00AAA37E /* ViewController.swift */,
 				03EA45EC2022D9BA00DA4B97 /* ViewControllerTwo.swift */,
 				03A46F362002B4CC00AAA37E /* Assets.xcassets */,
-				03A46F382002B4CC00AAA37E /* LaunchScreen.storyboard */,
-				03A46F3B2002B4CC00AAA37E /* Info.plist */,
 			);
 			path = NoHouse;
 			sourceTree = "<group>";
