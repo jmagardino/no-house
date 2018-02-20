@@ -43,6 +43,9 @@ class ViewController: UIViewController {
             txtPassword.text = pwdLoginList[currentUserIndex]
             tglRemember.isOn = true
         }
+// AUTO-LOGIN ***FOR TESTING ONLY***
+        txtUsername.text = "josh"
+        txtPassword.text = "jc"     
     }
     @objc func kbdDone_Click() {
         view.endEditing(true)
