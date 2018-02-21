@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0348E6A2203D05BE00788074 /* BetsTableCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348E6A1203D05BE00788074 /* BetsTableCtrl.swift */; };
 		03A46F302002B4CC00AAA37E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A46F2F2002B4CC00AAA37E /* AppDelegate.swift */; };
 		03A46F322002B4CC00AAA37E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A46F312002B4CC00AAA37E /* ViewController.swift */; };
 		03A46F352002B4CC00AAA37E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A46F332002B4CC00AAA37E /* Main.storyboard */; };
@@ -15,11 +16,10 @@
 		03EA45ED2022D9BA00DA4B97 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EA45EC2022D9BA00DA4B97 /* ViewControllerTwo.swift */; };
 		03F41C23203B839400AE8B6D /* ViewControllerThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F41C22203B839400AE8B6D /* ViewControllerThree.swift */; };
 		03F41C27203BDE6500AE8B6D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F41C26203BDE6500AE8B6D /* TableViewCell.swift */; };
-		03F41C29203BF44F00AE8B6D /* ViewControllerFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F41C28203BF44F00AE8B6D /* ViewControllerFour.swift */; };
-		03F41C2B203C021B00AE8B6D /* BetsTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F41C2A203C021B00AE8B6D /* BetsTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0348E6A1203D05BE00788074 /* BetsTableCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsTableCtrl.swift; sourceTree = "<group>"; };
 		03A46F2C2002B4CC00AAA37E /* NoHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A46F2F2002B4CC00AAA37E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03A46F312002B4CC00AAA37E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,8 +30,6 @@
 		03EA45EC2022D9BA00DA4B97 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
 		03F41C22203B839400AE8B6D /* ViewControllerThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerThree.swift; sourceTree = "<group>"; };
 		03F41C26203BDE6500AE8B6D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		03F41C28203BF44F00AE8B6D /* ViewControllerFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFour.swift; sourceTree = "<group>"; };
-		03F41C2A203C021B00AE8B6D /* BetsTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +69,7 @@
 				03A46F312002B4CC00AAA37E /* ViewController.swift */,
 				03EA45EC2022D9BA00DA4B97 /* ViewControllerTwo.swift */,
 				03F41C22203B839400AE8B6D /* ViewControllerThree.swift */,
-				03F41C28203BF44F00AE8B6D /* ViewControllerFour.swift */,
-				03F41C2A203C021B00AE8B6D /* BetsTabBarController.swift */,
+				0348E6A1203D05BE00788074 /* BetsTableCtrl.swift */,
 				03A46F362002B4CC00AAA37E /* Assets.xcassets */,
 				03F41C26203BDE6500AE8B6D /* TableViewCell.swift */,
 			);
@@ -152,11 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A46F322002B4CC00AAA37E /* ViewController.swift in Sources */,
+				0348E6A2203D05BE00788074 /* BetsTableCtrl.swift in Sources */,
 				03A46F302002B4CC00AAA37E /* AppDelegate.swift in Sources */,
 				03EA45ED2022D9BA00DA4B97 /* ViewControllerTwo.swift in Sources */,
 				03F41C27203BDE6500AE8B6D /* TableViewCell.swift in Sources */,
-				03F41C29203BF44F00AE8B6D /* ViewControllerFour.swift in Sources */,
-				03F41C2B203C021B00AE8B6D /* BetsTabBarController.swift in Sources */,
 				03F41C23203B839400AE8B6D /* ViewControllerThree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

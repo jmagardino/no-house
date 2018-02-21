@@ -2,18 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../NoHouse/User Icons/user_icon_joe.JPG">
-   </FileRef>
-   <FileRef
-      location = "group:../NoHouse/User Icons/user_icon_josh.jpg">
-   </FileRef>
-   <FileRef
-      location = "group:../NoHouse/User Icons/user_icon_mike.jpg">
-   </FileRef>
-   <FileRef
-      location = "group:..">
-   </FileRef>
-   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

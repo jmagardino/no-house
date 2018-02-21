@@ -24,6 +24,8 @@ class ViewControllerThree: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.navigationBar.isHidden = false
+        
         lblWager.text = "$\(String(wagerValue))"
         
     }
@@ -45,13 +47,15 @@ class ViewControllerThree: UIViewController {
 // Prepare segues
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "submitNewBet" {
-            let nextView = segue.destination as! ViewControllerFour
+            let nextView = segue.destination as! BetsTableCtrl
             nextView.newWagerValue = wagerValue
+//            nextView.betList.append(String(wagerValue))
         }
     }
     
 // Submit bet and switch to bet table view
     @IBAction func btnSubmitBet_Click(_ sender: Any) {
+        
         performSegue(withIdentifier: "submitNewBet", sender: wagerValue)
     }
 

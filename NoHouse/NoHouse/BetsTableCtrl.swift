@@ -1,5 +1,5 @@
 //
-//  ViewControllerFour.swift
+//  BetsTableCtrl.swift
 //  NoHouse
 //
 //  Created by Josh Cobert on 2/20/18.
@@ -8,24 +8,22 @@
 
 import UIKit
 
-class ViewControllerFour: UITableViewController {
+class BetsTableCtrl: UITableViewController {
 
-
-    
-    var betList = [""]
+    var betList : [String] = []
     var newWagerValue : Int = 0
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if betList[0] == "" {
-            betList.removeAll()
-        }
+        
+//        if betList[0] == "" {
+//            betList.removeAll()
+//        }
         betList.append(String(newWagerValue))
         
     }
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

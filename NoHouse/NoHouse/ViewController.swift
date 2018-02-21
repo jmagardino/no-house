@@ -26,6 +26,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.isHidden = true
+        
         lblTestMessage.text = ""
         
 // Adds ability to dismiss keyboard
@@ -54,7 +56,9 @@ class ViewController: UIViewController {
 // Prepares values to send through segue to home page
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "loginToHomePage" {
-            let nextView = segue.destination as! ViewControllerTwo
+            let nav = segue.destination as! UINavigationController
+            let nextView = nav.topViewController as! ViewControllerTwo
+//            let nextView = segue.destination as! ViewControllerTwo
             nextView.loginText = loginText
             nextView.rememberStatus = tglRemember.isOn
             nextView.currentUser = currentUserIndex

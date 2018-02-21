@@ -15,7 +15,8 @@ class ViewControllerTwo: UIViewController {
     @IBOutlet weak var imgUserIcon: UIImageView!
     @IBOutlet weak var lblBalance: UILabel!
     @IBOutlet weak var btnNewBet: UIButton!
-
+    @IBOutlet weak var btnViewBets: UIButton!
+    
     
     let userName = ["josh","joe","mike"]
     
@@ -26,6 +27,8 @@ class ViewControllerTwo: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.navigationBar.isHidden = true
+        
         lblWelcome.text = loginText
         imgUserIcon.image = UIImage(named: "user_icon_\(userName[currentUser]).jpg")        
         
@@ -51,8 +54,20 @@ class ViewControllerTwo: UIViewController {
         performSegue(withIdentifier: "newBet", sender: currentUser)
     }
     
+// View bets list
+    @IBAction func btnViewBets_Click(_ sender: Any) {
+        
+        
+        
+    }
+    
+    
+    
+    
+    
 // Logout
     @IBAction func btnLogout_Click(_ sender: Any) {
         performSegue(withIdentifier: "logout", sender: rememberStatus)
     }
+    
 }
