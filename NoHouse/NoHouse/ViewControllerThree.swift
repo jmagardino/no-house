@@ -14,6 +14,8 @@ class ViewControllerThree: UIViewController {
     @IBOutlet weak var sldWager: UISlider!
     @IBOutlet weak var lblWager: UILabel!
     @IBOutlet weak var segWager: UISegmentedControl!
+    @IBOutlet weak var txtTitle: UITextField!
+    @IBOutlet weak var txtDescription: UITextField!
     
     var currentUser : Int = 0
     var wagerValue : Int = 5
@@ -49,6 +51,9 @@ class ViewControllerThree: UIViewController {
         if segue.identifier == "submitNewBet" {
             let nextView = segue.destination as! BetsTableCtrl
             nextView.newWagerValue = wagerValue
+            nextView.currentUser = currentUser
+            nextView.betTitle = txtTitle.text!
+            nextView.betDescription = txtDescription.text!
 //            nextView.betList.append(String(wagerValue))
         }
     }
